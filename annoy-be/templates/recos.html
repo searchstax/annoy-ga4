@@ -1,0 +1,14 @@
+
+{% block content %}
+    <h1>{% block title %} Posts {% endblock %}</h1>
+    {% for reco in recos %}
+        <div class='post'>
+            <p>{{ reco['host_name'] }}</p>
+            <p>{{ reco['id'] }}</p>
+            <p>{{ reco['name'] }}</p>
+            <p>{{ reco['created'] }}</p>
+            <p>{{ reco['index_size'] }}</p>
+            <p>{{ reco['page_map'] }}</p>
+        </div>
+    {% endfor %}
+{% endblock %}
